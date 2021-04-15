@@ -16,15 +16,15 @@ const Navbar = ({ position }) => {
             <img src={logo} alt="logo" />
           </Link>
           <div class="flex items-center">
-            <a href="#" className="text-gray-900 font-medium mx-6">
+            <Link to="/" className="text-gray-900 font-medium mx-6">
               What's new?
-            </a>
+            </Link>
             <a href="#mission" className="text-gray-900 font-medium mx-6">
               Our mission
             </a>
-            <a href="#" className="text-white bg-gray-900 px-2 py-1 rounded font-medium mx-6">
+            <Link to="/" className="text-white bg-gray-900 px-2 py-1 rounded font-medium mx-6">
               Pre-order
-            </a>
+            </Link>
           </div>
           <div className="flex items-center">
             <Link to="/cart" className="text-gray-900 font-medium relative">
@@ -35,9 +35,9 @@ const Navbar = ({ position }) => {
                 10
               </span>
             </Link>
-            <a href="#" className="text-gray-900 font-medium ml-6">
+            <Link to="/" className="text-gray-900 font-medium ml-6">
               <FiUser className="text-gray-900" size="30" />
-            </a>
+            </Link>
           </div>
         </div>
       </motion.nav>

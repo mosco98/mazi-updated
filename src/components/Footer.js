@@ -8,6 +8,7 @@ import {
   FaSnapchatSquare,
   FaTwitterSquare
 } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -31,18 +32,18 @@ const Footer = () => {
       </form>
       <div className="flex items-center justify-between my-10">
         <div className="flex items-center space-x-3">
-          <a href="#" title="Instagram">
+          <Link to="/" title="Instagram">
             <FaInstagramSquare size="23" />
-          </a>
-          <a href="#" title="Twitter">
+          </Link>
+          <Link to="/" title="Twitter">
             <FaTwitterSquare size="23" />
-          </a>
-          <a href="#" title="Facebook">
+          </Link>
+          <Link to="/" title="Facebook">
             <FaFacebookSquare size="23" />
-          </a>
-          <a href="#" title="Snapchat">
+          </Link>
+          <Link to="/" title="Snapchat">
             <FaSnapchatSquare size="23" />
-          </a>
+          </Link>
         </div>
         <div className="flex items-center space-x-2">
           <FaCcMastercard size="30" />
@@ -51,15 +52,15 @@ const Footer = () => {
         </div>
       </div>
       <div className="self-end text-sm my-4">
-        <a className="opacity-50 text-gray-900 ml-5" href="#">
+        <Link to="/" className="opacity-50 text-gray-900 ml-5" href="#">
           Contact us
-        </a>
-        <a className="opacity-50 text-gray-900 ml-5" href="#">
+        </Link>
+        <Link to="/" className="opacity-50 text-gray-900 ml-5" href="#">
           Terms & condition
-        </a>
-        <a className="opacity-50 text-gray-900 ml-5" href="#">
+        </Link>
+        <Link to="/" className="opacity-50 text-gray-900 ml-5" href="#">
           Privacy policy
-        </a>
+        </Link>
       </div>
       <span>© 2021, Mazi wears</span>
     </footer>
