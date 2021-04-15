@@ -2,10 +2,57 @@ html {
   scroll-behavior: smooth;
 }
 
-// .hero-text {
-//   background: url('https://o.remove.bg/downloads/ec1d1e05-5004-464d-824f-56a83d436d74/unnamed-removebg-preview.png');
-//   background-repeat: repeat;
-//   background-size: contain;
-//   background-position: center;
-//   background-color: red;
-// }
+.menu-btn {
+  display: none;
+}
+nav {
+  @media (max-width: 1013px) {
+    .menu-btn {
+      display: block;
+    }
+    .nav-links {
+      display: none !important;
+    }
+    .user-icon {
+      display: none;
+    }
+  }
+}
+
+.hero-cols-ctn {
+  @media (max-width: 1013px) {
+    width: 100%;
+    img {
+      position: absolute;
+      z-index: -200;
+    }
+    .text-ctn {
+      background: rgba(225, 225, 225, 0.7);
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  @media (max-width: 625px) {
+    h1 {
+      font-size: 4rem;
+    }
+  }
+
+  @media (max-width: 559px) {
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
+  @media (max-width: 487px) {
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  @media (max-width: 414px) {
+    h1 {
+      font-size: 2.5rem;
+    }
+  }
+}

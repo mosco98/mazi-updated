@@ -11,7 +11,7 @@ const Story = () => {
       <section className="p-6">
         <h1 className="text-5xl font-bold my-6 text-center">THE BENIN ARTS DILEMMA : INVASION 1867</h1>
         <div className="h-auto w-auto lg:float-left mr-4">
-          <img src={beninArt} alt="benin-art" />
+          <img className="mx-auto" src={beninArt} alt="benin-art" />
         </div>
         <p className="my-4 break-all">
           In lost-wax or investment casting, the artist starts with a full-sized model of the sculpture, most often a

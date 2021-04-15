@@ -1,4 +1,59 @@
 html {
   scroll-behavior: smooth;
 }
+
+.menu-btn {
+  display: none;
+}
+
+@media (max-width: 1013px) {
+  nav .menu-btn {
+    display: block;
+  }
+  nav .nav-links {
+    display: none !important;
+  }
+  nav .user-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1013px) {
+  .hero-cols-ctn {
+    width: 100%;
+  }
+  .hero-cols-ctn img {
+    position: absolute;
+    z-index: -200;
+  }
+  .hero-cols-ctn .text-ctn {
+    background: rgba(225, 225, 225, 0.7);
+    height: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 625px) {
+  .hero-cols-ctn h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 559px) {
+  .hero-cols-ctn h1 {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 487px) {
+  .hero-cols-ctn h1 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 414px) {
+  .hero-cols-ctn h1 {
+    font-size: 2.5rem;
+  }
+}
 /*# sourceMappingURL=main.css.map */
