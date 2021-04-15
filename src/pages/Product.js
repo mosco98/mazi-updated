@@ -40,9 +40,9 @@ const Product = () => {
             </p>
           </div>
         </div>
-        <button className="mx-auto mt-10 flex items-center focus:outline-none">
+        {/* <button className="mx-auto mt-10 flex items-center focus:outline-none">
           More products <ArrowRight className="ml-1" size="20" />
-        </button>
+        </button> */}
       </section>
       <ServiceSection />
       <Footer />

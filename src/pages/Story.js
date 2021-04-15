@@ -8,12 +8,12 @@ const Story = () => {
   return (
     <div>
       <Navbar position="relative" />
-      <section className="p-6">
+      <section className="px-9">
         <h1 className="text-5xl font-bold my-6 text-center">THE BENIN ARTS DILEMMA : INVASION 1867</h1>
-        <div className="h-auto w-auto lg:float-left mr-4">
+        <div className="h-auto w-auto">
           <img className="mx-auto" src={beninArt} alt="benin-art" />
         </div>
-        <p className="my-4 break-all">
+        <p className="my-4">
           In lost-wax or investment casting, the artist starts with a full-sized model of the sculpture, most often a
           non-drying oil-based clay such as Plasticine model for smaller sculptures or for sculptures to be developed
           over an extended period (water-based clays must be protected from drying), and water-based clay for larger
@@ -24,7 +24,7 @@ const Story = () => {
           plaster is a means of preserving the artwork until a patron may be found to finance a bronze casting, either
           from the original moulds or from a new mould made from the refined plaster positive.
         </p>
-        <p className="my-4 break-all">
+        <p className="my-4">
           Once a production mould is obtained, a wax (hollow for larger sculptures) is then cast from the mould. For a
           hollow sculpture, a core is then cast into the void, and is retained in its proper location (after wax
           melting) by pins of the same metal used for casting. One or more wax sprues are added to conduct the molten
@@ -37,7 +37,7 @@ const Story = () => {
           filled with molten bronze. The removal of all wax and moisture prevents the liquid metal from being
           explosively ejected from the mould by steam and vapour.
         </p>
-        <p className="my-4 break-all">
+        <p className="my-4">
           Students of bronze casting will usually work in direct wax, where the model is made in wax, possibly formed
           over a core, or with a core cast in place, if the piece is to be hollow. If no mould is made and the casting
           process fails, the artwork will also be lost. After the metal has cooled, the external ceramic or clay is
@@ -47,7 +47,7 @@ const Story = () => {
           corrected by welding and carving. Small defects where sprues and vents were attached are filed or ground down
           and polished.
         </p>
-        <p className="my-4 break-all">
+        <p className="my-4">
           For a large sculpture, the artist will usually prepare small study models until the pose and proportions are
           determined. An intermediate-sized model is then constructed with all of the final details. For very large
           works, this may again be scaled to a larger intermediate. From the final scale model, measuring devices are
@@ -60,7 +60,7 @@ const Story = () => {
           then joined.
         </p>
       </section>
-      <Link to="/product" className="float-right px-6 italic opacity-80">
+      <Link to="/product" className="px-9 italic opacity-80">
         See beautiful creation from this story{' '}
         <span className="underline cursor-pointer hover:opacity-70 transition-all ease-in-out">here</span>
       </Link>
