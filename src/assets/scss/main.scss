@@ -20,18 +20,18 @@ nav {
 }
 
 .hero-cols-ctn {
-  @media (max-width: 1013px) {
-    width: 100%;
-    img {
-      position: absolute;
-      z-index: -200;
-    }
-    .text-ctn {
-      background: rgba(225, 225, 225, 0.7);
-      height: 100%;
-      width: 100%;
-    }
-  }
+  // @media (max-width: 1013px) {
+  //   width: 100%;
+  //   img {
+  //     position: absolute;
+  //     z-index: -200;
+  //   }
+  //   .text-ctn {
+  //     background: rgba(225, 225, 225, 0.7);
+  //     height: 100%;
+  //     width: 100%;
+  //   }
+  // }
 
   @media (max-width: 625px) {
     h1 {
@@ -55,4 +55,28 @@ nav {
       font-size: 2.5rem;
     }
   }
+}
+
+.side-drawer {
+  position: fixed;
+  top: 0;
+  background: white;
+  height: 100%;
+  width: 100%;
+  z-index: 10000000;
+}
+
+.product-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 647px) {
+    flex-direction: column;
+  }
+}
+
+.visible-hidden {
+  visibility: hidden !important;
 }

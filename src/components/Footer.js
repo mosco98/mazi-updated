@@ -16,15 +16,16 @@ const Footer = () => {
       <h1 className="text-gray-900 font-bold text-5xl opacity-10 absolute z-0 transform rotate-1 " style={{}}>
         Made in Lagos
       </h1>
-      <form className="lg:self-end z-10 sm:self-center flex flex-col items-center">
+      <form className="lg:self-end z-10 sm:self-center flex flex-col items-center w-auto">
         <div>
           <h1 className="text-3xl font-bold text-gray-900">Join our mailing list</h1>
           <small className="opacity-90">Be the first to get updates on our products</small>
           <div className="my-2 flex items-center">
             <input
-              className="py-2 w-56 bg-transparent border-gray-900 border-b border-opacity-60 outline-none mx-1"
+              className="py-2 w-96 bg-transparent border-gray-900 border-b border-opacity-60 outline-none mx-1"
               type="email"
               placeholder="Email address"
+              style={{ maxWidth: '200px' }}
             />
             <button className="text-sm bg-gray-900 text-white px-3 py-2">SUBSCRIBE</button>
           </div>
@@ -33,22 +34,22 @@ const Footer = () => {
       <div className="flex lg:flex-row flex-col items-center justify-between my-10">
         <div className="flex items-center space-x-3 my-2">
           <Link to="/" title="Instagram">
-            <FaInstagramSquare size="23" />
+            <FaInstagramSquare size="23" strokeWidth="1.3" />
           </Link>
           <Link to="/" title="Twitter">
-            <FaTwitterSquare size="23" />
+            <FaTwitterSquare size="23" strokeWidth="1.3" />
           </Link>
           <Link to="/" title="Facebook">
-            <FaFacebookSquare size="23" />
+            <FaFacebookSquare size="23" strokeWidth="1.3" />
           </Link>
           <Link to="/" title="Snapchat">
-            <FaSnapchatSquare size="23" />
+            <FaSnapchatSquare size="23" strokeWidth="1.3" />
           </Link>
         </div>
         <div className="flex items-center space-x-3 my-2">
-          <FaCcMastercard size="30" />
-          <FaCcVisa size="30" />
-          <FaCcPaypal size="30" />
+          <FaCcMastercard size="30" strokeWidth="1.3" />
+          <FaCcVisa size="30" strokeWidth="1.3" />
+          <FaCcPaypal size="30" strokeWidth="1.3" />
         </div>
       </div>
       <div className="lg:self-end sm:self-center text-sm my-4 flex items-center text-center">

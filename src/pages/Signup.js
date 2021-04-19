@@ -34,9 +34,9 @@ const Signup = () => {
     console.log('Success...')
   }
   return (
-    <div>
-      <Navbar position="absolute" />
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+    <>
+      {/* <Navbar position="absolute" /> */}
+      <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-4">
           <div>
             <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create an account</h2>
@@ -132,7 +132,7 @@ const Signup = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 

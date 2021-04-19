@@ -49,10 +49,10 @@ const Hero = () => {
               initial="hidden"
               animate="visible"
               variants={variants}
-              transition={{ delay: 6.5 }}
+              transition={{ delay: 4.5 }}
               href="#collections">
               <button className="flex items-center text-gray-900 px-5 py-3 hover:opacity-80 transition-all ease-in-out focus:outline-none text-1xl mt-12">
-                See collections <ArrowDown size="20" className="ml-1" />
+                See collections <ArrowDown size="20" className="ml-1" strokeWidth="1.3" />
               </button>
             </motion.a>
             {/* <motion.button
