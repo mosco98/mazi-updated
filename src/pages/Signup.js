@@ -1,37 +1,35 @@
-import React, { useRef, useState } from 'react'
-import { Link } from 'react-router-dom'
-
-import { Navbar } from '../components'
+import React, { useRef, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Signup = () => {
-  const nameRef = useRef()
-  const emailRef = useRef()
-  const passwordRef = useRef()
-  const retypePasswordRef = useRef()
+  const nameRef = useRef();
+  const emailRef = useRef();
+  const passwordRef = useRef();
+  const retypePasswordRef = useRef();
 
-  const [error, setError] = useState(false)
-  const [errMsg, setErrMsg] = useState('')
+  const [error, setError] = useState(false);
+  const [errMsg, setErrMsg] = useState("");
 
   function formSubmitHandler(e) {
-    e.preventDefault()
-    setError(false)
-    setErrMsg('')
-    const name = nameRef.current.value
-    const email = emailRef.current.value
-    const password = passwordRef.current.value
-    const password2 = retypePasswordRef.current.value
+    e.preventDefault();
+    setError(false);
+    setErrMsg("");
+    const name = nameRef.current.value;
+    const email = emailRef.current.value;
+    const password = passwordRef.current.value;
+    const password2 = retypePasswordRef.current.value;
 
-    if (name === '' || email === '' || password === '' || password2 === '') {
-      setError(true)
-      return setErrMsg('Fields cannot be empty')
+    if (name === "" || email === "" || password === "" || password2 === "") {
+      setError(true);
+      return setErrMsg("Fields cannot be empty");
     }
 
     if (password !== password2) {
-      setError(true)
-      return setErrMsg('Passwords do not match')
+      setError(true);
+      return setErrMsg("Passwords do not match");
     }
 
-    console.log('Success...')
+    console.log("Success...");
   }
   return (
     <>
@@ -39,7 +37,9 @@ const Signup = () => {
       <div className="min-h-screen flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
         <div className="max-w-md w-full space-y-4">
           <div>
-            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">Create an account</h2>
+            <h2 className="mt-6 text-center text-3xl font-extrabold text-gray-900">
+              Create an account
+            </h2>
           </div>
           {error && <p className="text-red-700">*{errMsg}</p>}
           <form className="mt-8 space-y-6" onSubmit={formSubmitHandler}>
@@ -97,14 +97,16 @@ const Signup = () => {
             <div>
               <button
                 type="submit"
-                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                className="group relative w-full flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-gray-800 hover:bg-gray-900 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
                 <span className="absolute left-0 inset-y-0 flex items-center pl-3">
                   <svg
                     className="h-5 w-5 text-gray-900 group-hover:text-gray-900"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 20 20"
                     fill="currentColor"
-                    aria-hidden="true">
+                    aria-hidden="true"
+                  >
                     <path
                       fillRule="evenodd"
                       d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z"
@@ -122,10 +124,11 @@ const Signup = () => {
               <Link
                 to="/signin"
                 onClick={() => {
-                  setError(false)
-                  setErrMsg('')
+                  setError(false);
+                  setErrMsg("");
                 }}
-                className="ml-1 font-medium cursor-pointer hover:text-gray-800">
+                className="ml-1 font-medium cursor-pointer hover:text-gray-800"
+              >
                 Sign in
               </Link>
             </span>
@@ -133,7 +136,7 @@ const Signup = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Signup
+export default Signup;
